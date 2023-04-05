@@ -43,9 +43,9 @@
 					
 				<!-- Control Buttons -->
 					<div id="myBtnContainer">
-						<button class="btn active" onclick="filterSelection('Elementary School')"> Elementary School</button>
-						<button class="btn" onclick="filterSelection('Middle School')"> Middle School</button>
-						<button class="btn" onclick="filterSelection('High School')"> High School</button>
+						<button class="button" onclick="filterSelection('Elementary School')"> Elementary School</button>
+						<button class="button" onclick="filterSelection('Middle School')"> Middle School</button>
+						<button class="button" onclick="filterSelection('High School')"> High School</button>
 					</div>
 					
 				<!-- Filterable Elements -->
@@ -143,10 +143,10 @@
 					}
 
 					// Add active class to the current button (highlight it)
-					var btnContainer = document.getElementById("myBtnContainer");
-					var btns = btnContainer.getElementsByClassName("btn");
-					for (var i = 0; i < btns.length; i++) {
-						btns[i].addEventListener("click", function(){
+					var buttonContainer = document.getElementById("myBtnContainer");
+					var buttons = buttonContainer.getElementsByClassName("btn");
+					for (var i = 0; i < buttons.length; i++) {
+						buttons[i].addEventListener("click", function(){
  							var current = document.getElementsByClassName("active");
   							current[0].className = current[0].className.replace(" active", "");
    							this.className += " active";
